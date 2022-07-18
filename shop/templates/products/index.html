@@ -1,6 +1,21 @@
 {% extends 'layout.html' %}
 {% block content %}
 {% include 'navbar.html' %}
+<br><br>
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{{url_for('static',filename= 'banner/bannera1.png')}}" class="d-block w-100" height="350px">
+    </div>
+    <div class="carousel-item">
+      <img src="{{url_for('static',filename= 'banner/bannera2.png')}}" class="d-block w-100" height="350px">
+    </div>
+    <div class="carousel-item">
+      <img src="{{url_for('static',filename= 'banner/img.jpg')}}" class="d-block w-100" height="350px">
+    </div>
+  </div>
+</div>
+<br><br><br>
 <div class="container">
     <div class="row">
         {% if brand %}
