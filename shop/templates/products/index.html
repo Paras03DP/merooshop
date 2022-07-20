@@ -5,7 +5,7 @@
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="{{url_for('static',filename= 'banner/bannera1.png')}}" class="d-block w-100" height="500px">
+      <img src="{{url_for('static',filename= 'banner/bannera1.png')}}" class="d-block w-100" height="350px">
     </div>
     <div class="carousel-item">
       <img src="{{url_for('static',filename= 'banner/bannera2.png')}}" class="d-block w-100" height="500px">
@@ -17,6 +17,7 @@
 </div>
 <br><br><br>
 <div class="container">
+  <h2>Products</h2>
     <div class="row">
         {% if brand %}
          {% for b in brand.items %}
@@ -192,24 +193,25 @@
         {% endif %}
     </div>
 </div>
-<br>
+<br><br><br>
     <!-- footer -->
-    <footer class="bg-danger">
+    <footer class="bg-dark">
       <ul class="list-inline text-center py-2">
         <li class="list-inline-item">
-          <a href="" class="text-white">listitem1</a>
+          <a href="" class="text-white">Mens</a>
         </li>
         <li class="list-inline-item">
-          <a href="" class="text-white">listitem2</a>
+          <a href="" class="text-white">Womens</a>
         </li>
         <li class="list-inline-item">
-          <a href="" class="text-white">listitem3</a>
+          <a href="" class="text-white">Kids</a>
         </li>
       </ul>
       
       <div class="text-white text-center pb-4">
-        <p class="h2">Your Title</p>
-        <small class="small">&copy;Your Title</small>
+        <p class="h2">MeroShop</p>
+        <hr class="bg-white" width="100%">
+        <small class="small">&copy;@ MeroShop 2022</small>
       </div>
       
     </footer>
