@@ -13,7 +13,7 @@
                 <th>Color</th>
                 <th>Price</th>
                 <th>Quantity</th>
-                <th>Discount</th>
+                <!-- <th>Discount</th> -->
                 <th>Subtotal</th>
                 <th>Update</th>
                 <th>Delete</th>
@@ -43,7 +43,7 @@
                     {% if product.discount  %}
                     <td>{{product.discount}} % &nbsp; &nbsp; is {{"%.2f"|format(discount)}}</td>
                     {% else %}
-                    <td></td>
+                    <!-- <td></td> -->
                     {% endif %}
                     {% set subtotal = product.quantity|int * product.price|float  %}
                     <td>Rs.{{"%.2f"|format(subtotal - discount|round(1,'floor')) }}</td>

@@ -14,7 +14,7 @@ def categories():
     categories = Category.query.join(Addproduct,(Category.id == Addproduct.category_id)).all()
     return categories
 
-
+    
 
 @app.route('/')
 def home():
